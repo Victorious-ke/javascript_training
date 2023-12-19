@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- task1 -->
+    <script>
+      // let base=prompt("enter base")
+      // let height=prompt("enter height")
+      // let area=(base*height)/2
+
+      // console.log(area)
+      // task 2
+      // let number=prompt("enter number")
+      // if(number%4==0)
+      // alert("divisible by 4");
+      //   else if(number%2==0)
+      //   alert("even");
+      // else
+      //   alert("odd");
+
+      // task 5
+      // let variable1=prompt("enter variable1");
+      // let variable2=prompt("enter variable2");
+      // let variable3=prompt("enter variable3");
+      //   if (variable1>variable2 && variable1>variable3) {
+      //     largest=variable1+ "is largest";
+      //   }else if (variable2>variable1 && variable2>variable3){
+      //     largest=variable2+ "is largest";
+      //   }else {
+      //      largest=variable3+ "is largest";
+      //   }
+      //   console.log(largest)
+
+      //task7
+      //   let marks=prompt("enter marks");
+      //   if (marks=>0 && marks<=100){
+      //   if(marks>79){
+      //     grade="A"
+      //   }
+      //   else if(marks>=60 && marks<=79){
+      //     grade="B"
+      //   }
+      //   else if(marks>=49 && marks<=59){
+      //     grade="C"
+      //   }
+      //   else if(marks>=49 && marks<=40){
+      //     grade="D"
+      //   }
+      //   else {
+      //     grade="E"
+      //   }
+      // }else{
+      //     grade="ERROR"
+      //   }
+      //   alert(grade)
+
+      //task 3
+      let phone_number = prompt("enter number");
+      if (phone_number.startsWith("+254") && phone_number.length == 13) {
+        phone_number = "is valid";
+      } else if (phone_number.startsWith("254") && phone_number.length == 12) {
+        phone_number = "+" + phone_number + "is valid";
+      } else if (phone_number.startsWith("07") && phone_number.length == 10) {
+        phone_number = "+254" + phone_number.slice(1, 10) + "is valid";
+      }
+      if (phone_number.startsWith("71") && phone_number.length == 9) {
+        phone_number = "+254" + phone_number + "is valid";
+      }
+      if (phone_number.startsWith("01") && phone_number.length == 10) {
+        phone_number = "+254" + phone_number.slice(1, 10) + "is valid";
+      }
+      console.log(phone_number);
+
+      // task 4
+      //   let email=prompt("enter email")
+      // if email.includes(@)
+    </script>
+  </body>
+</html>
