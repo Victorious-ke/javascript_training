@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let basic_salary = parseFloat(prompt("enter basic salary"));
+      let benefits = parseFloat(prompt("enter benefits"));
+      let gross_salary = basic_salary + benefits;
+      let taxable_income = gross_salary -(NSSF+nhdf);
+      let nhdf = gross_salary * 0.015;
+      nssf = gross_salary * 0.06;
+      if (nssf <= 18000) {
+        NSSF=nssf
+      } else {
+        NSSF=18000
+      }
+      console.log(gross_salary)
+      console.log(NSSF)
+      console.log(nhdf)
+      console.log(taxable_income)
+    </script>
+  </body>
+</html>

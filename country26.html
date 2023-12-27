@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1 id="header"></h1>
+  <h1 id="header2"></h1>
+  <h1 id="header3"></h1>
+  <script src="country26.js"></script>
+  <script>
+    let pops={
+      "0-50M":0,
+      "50M-100M":0,
+      ">100M":0
+    
+
+    }
+    for(i=0; i<countries_pops.length; i++){
+      let population=(countries_pops[i].population)
+      if(population>=0 && population<50000000){
+        pops["0-50M"] ++
+      }
+      else if(population>=50000000 && population<=100000000){
+        pops["50M-100M"] ++
+      }
+      else{
+        pops[">100M"] ++
+      }
+    }
+    document.getElementById("header").innerHTML=pops["0-50M"]
+    document.getElementById("header2").innerHTML=pops["50M-100M"]
+    document.getElementById("header3").innerHTML=pops[">100M"]
+    
+  </script>
+</body>
+</html>
