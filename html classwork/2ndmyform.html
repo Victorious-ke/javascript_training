@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <h1>My Form</h1>
+
+        <form id="my_form">
+          <label for="first name">First Name</label>
+          <input
+            type="text"
+            name="First Name"
+            id="first_name"
+            placeholder="John"
+          />
+          <label for="last name">Last Name</label>
+          <input
+            type="text"
+            name="Last Name"
+            id="last_name"
+            placeholder="Doe"
+          />
+          <label for="email">Email</label>
+          <input
+            type="email"
+            name="Email"
+            id="email"
+            placeholder="jd@mail.com"
+          />
+          <!-- <fieldset>First Name</fieldset>
+          <input type="text" />
+          <fieldset>Last Name</fieldset>
+          <input type="text" />
+          <fieldset>Email</fieldset>
+          <input type="email" /> -->
+          <input id="btn" type="submit" value="Submit" />
+        </form>
+        <h2 id="error" style="color: red"></h2>
+      </div>
+      <div class="table">
+        <table id="my_table" border="1">
+          <tr>
+            <td>First Name</td>
+            <td>Last Name</td>
+            <td>Email</td>
+          </tr>
+        </table>
+      </div>
+    </main>
+    <script src="myform2.js"></script>
+  </body>
+</html>

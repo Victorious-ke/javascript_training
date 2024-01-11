@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    let array1=[]
+    for(i=0; i<500; i++){
+      if (i%5==0 && i%7==0){
+        array1.push(i)
+      }
+    }
+    array1.shift()
+    console.log(array1)
+
+    //question two 
+    let array2=[]
+    for(i=20; i<80; i++){
+      if (i%7==0){
+        array2.push(i)
+      }
+    }
+    console.log(array2)
+
+  </script>
+</body>
+</html>
