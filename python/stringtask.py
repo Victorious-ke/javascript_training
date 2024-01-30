@@ -30,7 +30,7 @@ print(full_name)
 
 #Having the string r = '["E","W","C"]' #Manipulate it to display EWC
 r = '["E","W","C"]'
-converted= r.replace(",","")
+converted= r.replace(",","").replace("[","").replace("]",'').replace('"','')
 print(converted)
 
 #floats and integers
